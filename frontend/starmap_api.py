@@ -47,7 +47,7 @@ with ct2:
     loca = [ct2.text_input("國家",value=config["default"]["country"]),
             ct2.text_input("縣市",value=config["default"]["city"]),
             ct2.text_input("鄉鎮市區",value=config["default"]["district"]),
-            ct2.text_input("其他(選填)",value=config["default"]["other"])]
+            ct2.text_input("其他(選填)",value=config["default"]["option"])]
     ct2.divider()
 ##
 
