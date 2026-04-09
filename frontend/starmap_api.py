@@ -7,6 +7,7 @@ Created on Thu Apr  9 14:43:22 2026
 
 import streamlit as st
 import numpy as np
+import base64
 #from backend.py import get_star_position
 
 # My first app
@@ -19,7 +20,7 @@ b = np.arange(0,61)
 
 
 with col1:
-    hr = st.selectbox("點", a)
+    hr = st.selectbox("時", a)
     
 with col2:
     mins = st.selectbox("分", b)
@@ -33,3 +34,12 @@ if st.button("go!"):
     st.write(loca[0],loca[1],loca[2])
     #st.write(pos)
 
+file_ = open(r"\starmap\frontend\gif\mogu.gif", "rb")
+contents = file_.read()
+data_url = base64.b64encode(contents).decode("utf-8")
+file_.close()
+
+st.markdown(
+    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+    unsafe_allow_html=True,
+    )
