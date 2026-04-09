@@ -34,7 +34,7 @@ if st.button("go!"):
     st.write(loca[0],loca[1],loca[2])
     #st.write(pos)
 
-file_ = open(r"\starmap\frontend\gif\mogu.gif", "rb")
+file_ = open(r"\gif\mogu.gif", "rb")
 contents = file_.read()
 data_url = base64.b64encode(contents).decode("utf-8")
 file_.close()
