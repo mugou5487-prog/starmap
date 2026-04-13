@@ -10,6 +10,7 @@ import pandas as pd
 import base64
 import tomllib as toml
 import matplotlib.pyplot as plt
+plt.rcParams["font.family"] = "Noto Sans CJK JP"
 import os
 import datetime
 
