@@ -12,6 +12,7 @@ import tomllib as toml
 import os
 import sys
 import datetime
+import matplotlib.pyplot as plt
 
 sys.path.append(os.path.dirname(__file__))
 from starmap_main import get_star_recommendations, draw_compass
