@@ -74,7 +74,10 @@ st.markdown(f"<h2 style='text-align: center;'>{config['app']['title']}</h2>", un
 # ----------------------
 # 按鈕觸發
 # ----------------------
+hint_box = st.empty()
+hint_box.info("點擊右上角的按鈕輸入觀測資訊，開始尋找適合觀測的星體！")
 if go_clicked:
+    hint_box.empty()
     address = f"{country} {city} {district}"
     t = dt.strftime("%Y-%m-%d %H:%M:%S")
 
