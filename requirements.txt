@@ -4,4 +4,3 @@ numpy==1.26.4
 matplotlib==3.8.4
 astropy==5.3.4
 geopy==2.4.1
-fonts-noto-cjk==20230514.1
