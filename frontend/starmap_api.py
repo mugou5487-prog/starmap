@@ -49,7 +49,7 @@ with st.sidebar:
     city = st.text_input("縣市", value=config["default"]["city"])
     district = st.text_input("區", value=config["default"]["district"])
 
-    go_clicked = st.button("🚀 開始觀測")
+    go_clicked = st.button("🔥開始觀測🔥")
 
     # GIF
     file_path = os.path.join(os.path.dirname(__file__), "gif", "mogu.gif")
